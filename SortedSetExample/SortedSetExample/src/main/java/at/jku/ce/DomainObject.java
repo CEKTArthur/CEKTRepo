@@ -1,7 +1,7 @@
 package at.jku.ce;
 
 public class DomainObject {
-	public String id; 
+	public String uuid; 
 	private String name;
 
 	/** * Default constructor */
@@ -14,7 +14,7 @@ public class DomainObject {
 		super(); 
 		this.id = id; 
 	}
-	public String getId() {
+	public String getUuid() {
 		return id;
 	}
 
