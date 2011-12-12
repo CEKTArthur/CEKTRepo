@@ -7,7 +7,7 @@ public class DomainObject implements Comparable<DomainObject> {
 	private String comment;
 
 	/** * Default constructor */
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
 	
