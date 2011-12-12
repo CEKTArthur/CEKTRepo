@@ -39,18 +39,5 @@ public class DomainObject implements Comparable<DomainObject> {
 	public String toString() 
 	{ return "DomainObject [name=" + name + ", comment=" + comment + ", uuid=" + uuid + "]"; }
 	
-	public boolean equals(Object obj) 
-	{ if (!(obj instanceof DomainObject)) 
-		{ return false; } 
-	DomainObject domainObj = (DomainObject) obj; 
-	return uuid.equals(domainObj.getUuid()); }
-
-	public int hashCode() {
-		if (uuid != null) {
-			return uuid.hashCode();
-		} else {
-			return super.hashCode();
-		}
-	}
 
 	public int compareTo(DomainObject o) { DomainObject domainObj = (DomainObject) o; int domObjeComp = name.compareTo(domainObj.getName()); return ((domObjeComp == 0) ? uuid.compareTo(domainObj.getUuid()) : domObjeComp); }
